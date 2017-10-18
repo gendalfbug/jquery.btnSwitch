@@ -23,7 +23,7 @@ or jquery.btnswitch.js (origin)<br/>
  OnCallback: Callback on "On" selection
  OffCallback: Callback on "Off" selection
  ConfirmCall: Callable before switch use with ConfirmChanges,
- ToggleState: Set the state of the switch toggle.
+ ToggleState: Set the state of the switch toggle
  ConfirmChanges: Determines if we should confirm any changes
  ConfirmText: What message we'll display to the user when ConfirmChanges is set to true
  HiddenInputId: the hidden field the plugin should populate or false to not populate a hidden field
