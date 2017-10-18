@@ -14,17 +14,19 @@ or jquery.btnswitch.js (origin)<br/>
    $('#switch').btnSwitch()
    ```
 ```javascript
-Theme: Select a theme (Button, Light, Swipe, iOS, Android) Default: Button
-OnText: What to display for the "On" Button Default: On
-OffText: What to display for the "Off" Button Default: Off
-OnValue: The value of the "On" Button Default: true
-OffValue: The value of the "Off" Button Default: false
-OnCallback: Callback to fire when the "On" button is clicked Default: null
-OffCallback: Callback to fire when the "Off" button is clicked Default: null
-ToggleState: Set the state of the switch toggle. Default: false
-ConfirmChanges: Determines if we should confirm any changes Default: false
-ConfirmText: What message we'll display to the user when ConfirmChanges is set to true Default: Are you sure?
-HiddenInputId: the hidden field the plugin should populate or false to not populate a hidden field Default: false
+ Settings:
+ Theme: Select a theme (Button, Light, Swipe, iOS, Android)
+ OnText: What to display for the "On" Button
+ OffText: What to display for the "Off" Button
+ OnValue: The value of the "On" Button
+ OffValue: The value of the "Off" Button
+ OnCallback: Callback on "On" selection
+ OffCallback: Callback on "Off" selection
+ ConfirmCall: Callable before switch use with ConfirmChanges,
+ ToggleState: Set the state of the switch toggle.
+ ConfirmChanges: Determines if we should confirm any changes
+ ConfirmText: What message we'll display to the user when ConfirmChanges is set to true
+ HiddenInputId: the hidden field the plugin should populate or false to not populate a hidden field
 ```
 A simple way to create button switches
 
