@@ -1,8 +1,13 @@
-## jquery.btnSwitch
+## jquery.btnSwitchWCC (with ConfirmCall)
 [![NPM version](http://img.shields.io/npm/v/jquery-btnswitch.svg?style=flat)](https://www.npmjs.com/package/jquery-btnswitch)
 [![npm](https://img.shields.io/npm/l/jquery-btnswitch.svg)](https://www.npmjs.com/package/jquery-btnswitch)
 [![npm](https://img.shields.io/npm/dt/jquery-btnswitch.svg)](https://www.npmjs.com/package/jquery-btnswitch)
 
+jquery.btnswitchwcc.js or jquery.btnswitch.js
+     Minimal Usage: 
+   ```javascript
+   $('#switch').btnSwitchWCC()
+   ```
 
 ```javascript
 Theme: Select a theme (Button, Light, Swipe, iOS, Android) Default: Button
