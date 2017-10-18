@@ -3,12 +3,16 @@
 [![npm](https://img.shields.io/npm/l/jquery-btnswitch.svg)](https://www.npmjs.com/package/jquery-btnswitch)
 [![npm](https://img.shields.io/npm/dt/jquery-btnswitch.svg)](https://www.npmjs.com/package/jquery-btnswitch)
 
-jquery.btnswitchwcc.js or jquery.btnswitch.js<br/>
+jquery.btnswitchwcc.js (fork)<br/>
      Minimal Usage: 
    ```javascript
    $('#switch').btnSwitchWCC()
    ```
-
+or jquery.btnswitch.js (origin)<br/>
+     Minimal Usage: 
+   ```javascript
+   $('#switch').btnSwitch()
+   ```
 ```javascript
 Theme: Select a theme (Button, Light, Swipe, iOS, Android) Default: Button
 OnText: What to display for the "On" Button Default: On
