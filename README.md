@@ -4,7 +4,7 @@
 [![npm](https://img.shields.io/npm/dt/jquery-btnswitch.svg)](https://www.npmjs.com/package/jquery-btnswitch)
 
 
-```sh 
+```javascript
 Theme: Select a theme (Button, Light, Swipe, iOS, Android) Default: Button
 OnText: What to display for the "On" Button Default: On
 OffText: What to display for the "Off" Button Default: Off
