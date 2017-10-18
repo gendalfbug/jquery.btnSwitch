@@ -6,7 +6,16 @@
 jquery.btnswitchwcc.js (fork)<br/>
      Minimal Usage: 
    ```javascript
-   $('#switch').btnSwitchWCC()
+     $( document ).ready(function() {
+        $('.btn-switch').each(function () {
+            $('#' + this.id).btnSwitchWCC({
+                Theme: 'iOS',
+                ToggleState: $(this).attr('ToggleState'),
+                ConfirmChanges: true,
+                ConfirmCall: showModal.bind(this,this, switchState.bind(this, this))
+            });
+        });
+    });
    ```
 or jquery.btnswitch.js (origin)<br/>
      Minimal Usage: 
