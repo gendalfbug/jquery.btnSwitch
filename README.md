@@ -16,7 +16,56 @@ jquery.btnswitchwcc.js (fork)<br/>
             });
         });
     });
+    
+    /**
+    // bootstrap modal
+    <div class="modal" id="confirmModal">
+    ...
+                <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                <a href="javascript:void(0);"  id="form-url" class="btn btn-success pull-right"
+                   title="submit">
+                    Yes
+                </a>
+            </div>
+    ...
+    </div>
+     */
+     
+  function showModal(element, callback, callbackSwitch) {
+        if (callbackSwitch == undefined) callbackSwitch = function () {};
+
+        //open modal
+        var _modal  = $("#confirmModal");
+        _modal.modal();
+        _modal.find('#form-text').html( element.getAttribute('data-text'));
+
+        // add event
+        var _formUrl = _modal.find('#form-url');
+        _formUrl.attr('data-url', element.getAttribute('data-url') );
+        _formUrl.off('click');
+        _formUrl.on('click', callback.bind(this, callbackSwitch.bind(this)));
+    }
+    
+    function switchState(element, callbackSwitch) {
+        if (callbackSwitch == undefined) callbackSwitch = function () {};
+
+        $.post('\your_ajax\url', {
+       your_data: 'your_value'
+        }, function (data) {
+          
+        }).done(function () {
+            callbackSwitch(true);
+        }).fail(function () {
+            callbackSwitch(false);
+        });
+        return false;
+    }
+    
    ```
+   ## discription
+   ConfirmCall: showModal.bind(this,this, switchState.bind(this, this), HERE WILL BE ADDED A CALLBACK )
+   
 or jquery.btnswitch.js (origin)<br/>
      Minimal Usage: 
    ```javascript
