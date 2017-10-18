@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/l/jquery-btnswitch.svg)](https://www.npmjs.com/package/jquery-btnswitch)
 [![npm](https://img.shields.io/npm/dt/jquery-btnswitch.svg)](https://www.npmjs.com/package/jquery-btnswitch)
 
-jquery.btnswitchwcc.js or jquery.btnswitch.js
+jquery.btnswitchwcc.js or jquery.btnswitch.js<br/>
      Minimal Usage: 
    ```javascript
    $('#switch').btnSwitchWCC()
